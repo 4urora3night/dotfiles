@@ -1,0 +1,20 @@
+/* -----------------------------------------------------
+ * Import Pywal colors 
+ * ----------------------------------------------------- */
+@import '../../../../../.cache/wal/colors-waybar.css';
+
+@define-color backgroundlight #313244;
+@define-color backgrounddark #cdd6f4;
+@define-color workspacesbackground1 #313244;
+@define-color workspacesbackground2 #cdd6f4;
+@define-color bordercolor #313244;
+@define-color textcolor1 #313244;
+@define-color textcolor2 #cdd6f4;
+@define-color textcolor3 #cdd6f4;
+@define-color iconcolor #313244;
+
+@import '../style.css';
+
+window#waybar {
+    background-color: rgba(255,255,255,0.1);
+}
