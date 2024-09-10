@@ -140,7 +140,7 @@
 
     // Browser Launcher
     "custom/browser": {
-        "format": "",
+        "format": "",
         "on-click": "~/.config/ml4w/settings/browser.sh",
         "tooltip": false
     },    
@@ -324,7 +324,10 @@
         },
         "on-click": "pavucontrol"
     },
-
+"custom/cava_mviz": {
+    "exec": "~/.config/hypr/scripts/WaybarCava.sh",
+    "format": "{}"
+},
     // Bluetooth
     "bluetooth": {
         "format-disabled": "",

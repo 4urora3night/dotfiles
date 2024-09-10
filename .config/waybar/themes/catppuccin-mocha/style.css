@@ -42,6 +42,36 @@ window#waybar {
     transition-duration: .5s;
 }
 
+.modules-left, .modules-center, .modules-right {
+	background: @theme_base_color; 
+ 	border: 0.5px solid @overlay0;
+	border-radius: 15px;
+
+} 
+
+.modules-left, .modules-right {
+	background: @theme_base_color; 
+ 	border: 0.5px solid @overlay0;
+	padding-top: 2px;
+	padding-bottom: 2px;
+
+} 
+.modules-left{
+    padding-right: 14px;
+    padding-left: 4px;
+
+} 
+.modules-right{
+    padding-left: 14px;
+
+} 
+.modules-center {
+  	border: 1px solid @blue;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 10px;
+	padding-left: 10px;
+} 
 /* -----------------------------------------------------
  * Workspaces 
  * ----------------------------------------------------- */
@@ -138,8 +168,22 @@ window#waybar.empty #window {
  * Custom Quicklinks
  * ----------------------------------------------------- */
 
+#custom-cava_mviz {
+	color: @pink;
+    background-color: @surface0;
+    border-radius: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 5px;
+}
+
 #custom-brave, 
-#custom-browser, 
+#custom-browser{
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: @maroon;
+}
 #custom-keybindings, 
 #custom-outlook, 
 #custom-filemanager, 
@@ -148,8 +192,18 @@ window#waybar.empty #window {
 #custom-calculator, 
 #custom-windowsvm, 
 #custom-cliphist, 
-#custom-settings, 
-#custom-wallpaper, 
+#custom-settings{
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: @blue;
+}
+#custom-wallpaper{
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: @green;
+}
 #custom-system,
 #custom-hyprshade,
 #custom-hypridle,
@@ -167,7 +221,7 @@ window#waybar.empty #window {
     margin-right: 23px;
     font-size: 20px;
     font-weight: bold;
-    color: @iconcolor;
+    color: @sky;
 }
  
 #custom-hyprshade {
@@ -250,25 +304,15 @@ window#waybar.empty #window {
 #custom-updates {
     background-color: @surface0;
     font-size: 16px;
-    color: @textcolor2;
+    color: @red;
     border-radius: 1rem;
-    padding: 2px 10px 0px 10px;
-    margin: 5px 15px 5px 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-#custom-updates.green {
-    background-color: @surface0;
-}
-
-#custom-updates.yellow {
-    background-color: #ff9a3c;
-    color: #cdd6f4;
-}
-
-#custom-updates.red {
-    background-color: #dc2f2f;
-    color: #cdd6f4;
-}
 
 /* -----------------------------------------------------
  * Hardware Group
@@ -334,7 +378,7 @@ window#waybar.empty #window {
 }
 
 #pulseaudio.muted {
-    background-color: @backgrounddark;
+    background-color: @crust;
     color: @textcolor1;
 }
 

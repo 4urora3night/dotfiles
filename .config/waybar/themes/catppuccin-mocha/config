@@ -27,7 +27,6 @@
 
     // Load Modules
     "include": [
-        "~/.config/ml4w/settings/waybar-quicklinks.json",
         "~/.config/waybar/themes/catppuccin-mocha/modules.json"
     ],
 
@@ -38,26 +37,24 @@
         "custom/waybarthemes",
         "custom/wallpaper",
         //"wlr/taskbar",
-        "group/quicklinks",
+        "custom/updates",
     ],
 
     // Modules Center
     "modules-center": [
         "custom/clock",
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+        "custom/cava_mviz",
     ],
 
     // Modules Right    
     "modules-right": [
-        "custom/updates",
         "pulseaudio",
 //"backlight",
         "bluetooth",
         "battery", 
 "network",
         "group/hardware",
-        "custom/cliphist",
-        "custom/hypridle",
         "custom/hyprshade",
 "tray",
         "custom/exit",
