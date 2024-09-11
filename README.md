@@ -4,3 +4,7 @@ Dotfiles
 <p align="center">
 These are some of my dotfiles which depend on <a href="https://github.com/mylinuxforwork/dotfiles">ML4W dotfiles</a>by Stephan Raabe.I use catppuccin-mocha coulour scheme to theme it.
 </p>
+<h3 align="center">
+Preview
+</h3>
+<img src="assets/screenshot_11092024_174920.jpg">
