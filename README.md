@@ -7,4 +7,4 @@ These are some of my dotfiles which depend on <a href="https://github.com/mylinu
 <h3 align="center">
 Preview
 </h3>
-<img src="assets/screenshot_11092024_174920.jpg">
+<img src="assets/screenshot.jpg">
