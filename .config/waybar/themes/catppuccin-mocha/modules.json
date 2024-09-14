@@ -214,7 +214,13 @@
         "format": "/ C {usage}% ",
         "on-click": "alacritty -e htop"
     },
-
+    "custom/temprature": {
+        "exec": "~/.config/cpu_temp.sh",
+        "interval": 5,
+        "tooltip": false,
+        "format": "  {}°C" 
+    },
+    
     // Memory
     "memory": {
         "format": "/ M {}% ",
@@ -355,3 +361,4 @@
         "on-click-right": "hyprlock"        
     }
 }
+

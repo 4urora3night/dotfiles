@@ -167,7 +167,9 @@ window#waybar.empty #window {
 /* -----------------------------------------------------
  * Custom Quicklinks
  * ----------------------------------------------------- */
-
+#custom-temprature,
+  
+  
 #custom-cava_mviz {
 	color: @pink;
     background-color: @surface0;

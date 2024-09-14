@@ -44,6 +44,7 @@
     "modules-center": [
         "custom/clock",
         "hyprland/workspaces",
+        "custom/temprature",
         "custom/cava_mviz",
     ],
 
