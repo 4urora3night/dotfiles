@@ -25,10 +25,10 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
      inkscape:zoom="8.0016191"
-     inkscape:cx="64.736898"
-     inkscape:cy="-24.245093"
-     inkscape:window-width="1898"
-     inkscape:window-height="1006"
+     inkscape:cx="73.797564"
+     inkscape:cy="5.4988871"
+     inkscape:window-width="1886"
+     inkscape:window-height="998"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -85,10 +85,10 @@
        id="linearGradient2"
        x1="0.38140574"
        y1="0.11361876"
-       x2="36.639721"
-       y2="4.1402063"
+       x2="36.497814"
+       y2="3.8505855"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.99647676,0,0,0.99647676,-0.2840412,0.18526033)" />
+       gradientTransform="matrix(0.94949344,0,0,0.94949344,0.78505939,0.25467987)" />
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -96,15 +96,15 @@
      id="layer1">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:5.62456px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient2);stroke-width:0.263651"
-       x="-0.48984841"
-       y="4.2539077"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:5.35937px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient2);stroke-width:0.25122"
+       x="0.58895588"
+       y="4.1314926"
        id="text1"
-       transform="scale(1.022121,0.97835775)"><tspan
+       transform="scale(1.0102829,0.9898218)"><tspan
          sodipodi:role="line"
          id="tspan1"
-         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:5.64444px;font-family:'BlexMono Nerd Font Mono';-inkscape-font-specification:'BlexMono Nerd Font Mono, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient2);stroke-width:0.263651"
-         x="-0.48984841"
-         y="4.2539077">- dotfiles-</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.37831px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient2);stroke-width:0.25122"
+         x="0.58895588"
+         y="4.1314926">- dotfiles-</tspan></text>
   </g>
 </svg>
