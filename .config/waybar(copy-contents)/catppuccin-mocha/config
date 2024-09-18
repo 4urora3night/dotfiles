@@ -36,8 +36,9 @@
         "custom/settings",
         "custom/waybarthemes",
         "custom/wallpaper",
-        //"wlr/taskbar",
+        "custom/cava_mviz",
         "custom/updates",
+
     ],
 
     // Modules Center
@@ -45,19 +46,18 @@
         "custom/clock",
         "hyprland/workspaces",
         "custom/temprature",
-        "custom/cava_mviz",
     ],
 
     // Modules Right    
     "modules-right": [
         "pulseaudio",
-//"backlight",
+
         "bluetooth",
         "battery", 
-"network",
+        "network",
         "group/hardware",
         "custom/hyprshade",
-"tray",
+        "tray",
         "custom/exit",
         "custom/ml4w-welcome",
     ]

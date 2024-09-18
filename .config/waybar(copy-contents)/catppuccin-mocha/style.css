@@ -13,16 +13,7 @@
 /* -----------------------------------------------------
  * Import Pywal colors 
  * ----------------------------------------------------- */
-@import 'mocha.css'; 
-@define-color surface0 #313244;
-@define-color backgrounddark #cdd6f4;
-@define-color workspacesbackground1 #cdd6f4;
-@define-color workspacesbackground2 #CCCCCC;
-@define-color bordercolor #cdd6f4;
-@define-color textcolor1 #cdd6f4;
-@define-color textcolor2 #cdd6f4;
-@define-color textcolor3 #cdd6f4;
-@define-color iconcolor #cdd6f4;
+@import 'macchiato.css';
 
 /* -----------------------------------------------------
  * General 
@@ -43,25 +34,27 @@ window#waybar {
 }
 
 .modules-left, .modules-center, .modules-right {
-	background: @theme_base_color; 
+	background: @crust; 
  	border: 0.5px solid @overlay0;
 	border-radius: 15px;
 
 } 
 
 .modules-left, .modules-right {
-	background: @theme_base_color; 
+	background: @crust; 
  	border: 0.5px solid @overlay0;
 	padding-top: 2px;
 	padding-bottom: 2px;
 
 } 
 .modules-left{
+    border: 1px solid @blue;
     padding-right: 14px;
     padding-left: 4px;
 
 } 
 .modules-right{
+    border: 1px solid @blue;
     padding-left: 14px;
 
 } 
@@ -111,7 +104,7 @@ tooltip {
 }
 
 tooltip label {
-    color: @textcolor2;
+    color: @text;
 }
 
 /* -----------------------------------------------------
@@ -123,7 +116,7 @@ tooltip label {
     margin: 5px 15px 5px 0px;
     padding: 2px 10px 0px 10px;
     border-radius: 1rem;
-    color:@textcolor2;
+    color:@text;
     font-size:16px;
     font-weight:normal;
 }
@@ -167,11 +160,18 @@ window#waybar.empty #window {
 /* -----------------------------------------------------
  * Custom Quicklinks
  * ----------------------------------------------------- */
-#custom-temprature,
+#custom-temprature{
+    color: @rosewater;
+    background-color: @surface0;
+    border-radius: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 5px;
+     
+}
   
-  
-#custom-cava_mviz {
-	color: @pink;
+  #custom-cava_mviz {
+	color: @blue;
     background-color: @surface0;
     border-radius: 1rem;
     padding-left: 20px;
@@ -235,7 +235,7 @@ window#waybar.empty #window {
 }
 
 #custom-hypridle.active {
-    color: @iconcolor;
+    color: @text;
 }
 
 #custom-hypridle.notactive {
@@ -264,7 +264,7 @@ window#waybar.empty #window {
     font-size: 22px;
     font-weight: bold;
     opacity: 0.8;
-    color: @iconcolor;
+    color: @text;
 }
 
 #idle_inhibitor.activated {
@@ -282,7 +282,7 @@ window#waybar.empty #window {
 #custom-appmenu {
     background-color: @surface0;
     font-size: 16px;
-    color: @textcolor1;
+    color: @text;
     border-radius: 1rem;
     padding: 2px 10px 0px 10px;
     margin: 5px 15px 5px 10px;
@@ -296,7 +296,7 @@ window#waybar.empty #window {
     margin: 0px 20px 0px 0px;
     padding:0px;
     font-size:20px;
-    color: @iconcolor;
+    color: @text;
 }
 
 /* -----------------------------------------------------
@@ -324,7 +324,7 @@ window#waybar.empty #window {
     margin:0px;
     padding:0px;
     font-size:16px;
-    color:@iconcolor;
+    color:@text;
 }
 
 #language {
@@ -338,7 +338,7 @@ window#waybar.empty #window {
 #clock {
     background-color: @surface0;
     font-size: 16px;
-    color: @textcolor1;
+    color: @text;
     border-radius: 1rem;
     padding: 2px 10px 0px 10px;
     margin: 5px 15px 5px 0px;
@@ -346,7 +346,7 @@ window#waybar.empty #window {
 #custom-clock {
     background-color: @surface0;
     font-size: 18px;
-    color: @textcolor1;
+    color: @text;
     border-radius: 1rem;
     padding-left: 20px;
     padding-right: 20px;
@@ -360,7 +360,7 @@ window#waybar.empty #window {
  #backlight {
     background-color: @surface0;
     font-size: 16px;
-    color: @textcolor2;
+    color: @text;
     border-radius: 1rem;
     padding: 2px 10px 0px 10px;
     margin: 5px 15px 5px 0px;
@@ -373,7 +373,7 @@ window#waybar.empty #window {
 #pulseaudio {
     background-color: @surface0;
     font-size: 16px;
-    color: @textcolor2;
+    color: @text;
     border-radius: 1rem;
     padding: 2px 10px 0px 10px;
     margin: 5px 15px 5px 0px;
@@ -381,7 +381,7 @@ window#waybar.empty #window {
 
 #pulseaudio.muted {
     background-color: @crust;
-    color: @textcolor1;
+    color: @text;
 }
 
 /* -----------------------------------------------------
@@ -391,7 +391,7 @@ window#waybar.empty #window {
 #network {
     background-color: @surface0;
     font-size: 16px;
-    color: @textcolor2;
+    color: @text;
     border-radius: 1rem;
     padding: 2px 10px 0px 10px;
     margin: 5px 15px 5px 0px;
@@ -399,12 +399,12 @@ window#waybar.empty #window {
 
 #network.ethernet {
     background-color: @surface0;
-    color: @textcolor2;
+    color: @text;
 }
 
 #network.wifi {
     background-color: @surface0;
-    color: @textcolor2;
+    color: @text;
 }
 
 /* -----------------------------------------------------
@@ -414,7 +414,7 @@ window#waybar.empty #window {
  #bluetooth, #bluetooth.on, #bluetooth.connected {
     background-color: @surface0;
     font-size: 16px;
-    color: @textcolor2;
+    color: @text;
     border-radius: 1rem;
     padding: 2px 10px 0px 10px;
     margin: 5px 15px 5px 0px;
@@ -433,27 +433,27 @@ window#waybar.empty #window {
 #battery {
     background-color: @surface0;
     font-size: 16px;
-    color: @textcolor2;
+    color: @text;
     border-radius: 1rem;
     padding: 2px 15px 0px 10px;
     margin: 5px 15px 5px 0px;
 }
 
 #battery.charging, #battery.plugged {
-    color: @textcolor2;
+    color: @text;
     background-color: @surface0;
 }
 
 @keyframes blink {
     to {
         background-color: @surface0;
-        color: @textcolor2;
+        color: @text;
     }
 }
 
 #battery.critical:not(.charging) {
     background-color: #f53c3c;
-    color: @textcolor3;
+    color: @text;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
