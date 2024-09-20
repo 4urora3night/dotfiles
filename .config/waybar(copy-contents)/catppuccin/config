@@ -27,7 +27,7 @@
 
     // Load Modules
     "include": [
-        "~/.config/waybar/themes/catppuccin-mocha/modules.json"
+        "~/.config/waybar/themes/catppuccin/modules.json"
     ],
 
     // Modules Left

@@ -13,7 +13,7 @@
 /* -----------------------------------------------------
  * Import Pywal colors 
  * ----------------------------------------------------- */
-@import 'macchiato.css';
+@import 'mocha.css';
 
 /* -----------------------------------------------------
  * General 
@@ -34,7 +34,7 @@ window#waybar {
 }
 
 .modules-left, .modules-center, .modules-right {
-	background: @crust; 
+	background: @base; 
  	border: 0.5px solid @overlay0;
 	border-radius: 15px;
 

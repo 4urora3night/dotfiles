@@ -215,7 +215,7 @@
         "on-click": "alacritty -e htop"
     },
     "custom/temprature": {
-        "exec": "~/.config/cpu_temp.sh",
+        "exec": "~/.config/waybar/themes/catppuccin/cpu_temp.sh",
         "interval": 5,
         "tooltip": false,
         "format": "  {}°C" 
@@ -331,7 +331,7 @@
         "on-click": "pavucontrol"
     },
 "custom/cava_mviz": {
-    "exec": "~/.config/waybar/themes/catppuccin-mocha/cava-waybar.sh",
+    "exec": "~/.config/waybar/themes/catppuccin/cava-waybar.sh",
     "format": "{}"
 },
     // Bluetooth
