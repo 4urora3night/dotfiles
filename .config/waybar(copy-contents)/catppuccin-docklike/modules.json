@@ -171,7 +171,7 @@
     // Power Menu
     "custom/exit": {
         "format": "",
-        "on-click": "nwg-bar",
+        "on-click": "wlogout",
         "tooltip": false
     },
 
@@ -211,6 +211,13 @@
         "on-click": "alacritty -e htop"
     },
 
+    // Temperature
+    "custom/temprature": {
+        "exec": "~/.config/waybar/themes/catppuccin-docklike/cpu_temp.sh",
+        "interval": 5,
+        "tooltip": false,
+        "format": "  {}°C" 
+    },   
     // Memory
     "memory": {
         "format": "/ M {}% ",

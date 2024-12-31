@@ -30,6 +30,7 @@
     "modules-left": [
         "hyprland/workspaces",
         "custom/updates",
+        "custom/temprature",
     ],
 
     // Modules Center`
