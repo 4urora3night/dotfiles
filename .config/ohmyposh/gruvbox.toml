@@ -1,0 +1,101 @@
+version = 3
+final_space = true
+[palette]
+bg0 = '#32302f'
+bg1 = '#3c3836'
+bg4 = '#504945'
+bg5 = '#665c54'
+bg_statusline3 = '#5b534d'
+fg0 = '#d4be98'
+fg1 = '#ddc7a1'
+
+[upgrade]
+  source = 'cdn'
+  interval = '168h'
+  auto = false
+  notice = false
+
+[transient_prompt]
+  background = "transparent"
+  foreground = "fg0"
+  template = "➜ "
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+
+  [[blocks.segments]]
+    type = 'text'
+    style = 'plain'
+    template = '╭'
+    foreground = 'p:fg1'
+    background = 'transparent'
+
+  [[blocks.segments]]
+    type = 'path'
+    style = 'diamond'
+    leading_diamond = ''
+    trailing_diamond = ''
+    foreground= 'p:fg0'
+    background = 'p:bg5'
+  [[blocks.segments]]
+    template = ' {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }} <cyan>{{ if gt .Behind 0 }}⇣{{ end }}{{ if gt .Ahead 0 }}⇡{{ end }}</>'
+    foreground = 'p:grey'
+    background = 'transparent'
+    type = 'git'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      branch_icon = ''
+      cache_duration = 'none'
+      commit_icon = '@'
+      fetch_status = true
+
+[[blocks]]
+newline = false
+  type = 'prompt'
+  alignment = 'right'
+  overflow = 'hidden'
+
+ [[blocks.segments]]
+  type = 'battery'
+  style = 'diamond'
+  leading_diamond = ''
+  trailing_diamond = ''
+  foreground = 'p:fg0'
+  background = 'p:bg4'
+  background_templates = [
+    "{{if eq \"Charging\" .State.String}}blue{{end}}",
+    "{{if eq \"Discharging\" .State.String}}yellow{{end}}",
+    "{{if eq \"Full\" .State.String}}green{{end}}"
+  ]
+  template = " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }} "
+    [blocks.segments.properties]
+      discharging_icon = " "
+      charging_icon = " "
+      charged_icon = " "
+      
+  [[blocks.segments]]
+  type = "time"
+  style = "diamond"
+  leading_diamond = ''
+  trailing_diamond = '╮'
+  foreground = "p:fg0"
+  background = "p:bg4"
+
+  [properties]
+  time_format = "15:04"
+
+[[blocks]]
+  newline = true
+  type = 'prompt'
+  alignment = 'left'
+  
+  [[blocks.segments]]
+    type = 'text'
+    style = 'plain'
+    template = '╰'
+    foreground = 'p:fg1'
+    background = 'transparent'
+
+
