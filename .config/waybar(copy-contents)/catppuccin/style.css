@@ -83,7 +83,7 @@ window#waybar {
   }
   
   #workspaces button.active {
-    color: @sky;
+    color: @peach;
     border-radius: 1rem;
   }
   
