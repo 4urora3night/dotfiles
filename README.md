@@ -13,6 +13,7 @@ My dots.
 ### Catpuccin Macchiato (unofficial)
 ![dev](https://github.com/4urora3night/4urora3night/blob/main/screenshots/waybar2.jpg?raw=true)
 - ML4W waybar based
+- Cava on bar
 ---
 ### Catpuccin Dock-like (unofficial)
 ![dev](https://github.com/4urora3night/4urora3night/blob/main/screenshots/waybar3.jpg?raw=true)
