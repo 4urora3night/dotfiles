@@ -1,0 +1,6 @@
+[config]
+reload_apps = true
+
+[templates.waybar]
+input_path = "templates/waybar-colors.css"
+output_path = "~/.config/waybar/themes/slanted-bubbles/matugen-waybar.css"
