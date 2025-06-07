@@ -1,0 +1,4 @@
+[pacman]
+install = ['cava', 'btop', 'github-desktop-bin']
+[flatpak]
+install = ['app.zen_browser.zen', 'com.discordapp.Discord', 'org.vinegarhq.Sober', 'md.obsidian.Obsidian', 'io.github.kukuruzka165.materialgram']
