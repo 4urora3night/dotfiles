@@ -1,0 +1,48 @@
+// __        __          _                 
+// \ \      / /_ _ _   _| |__   __ _ _ __  
+//  \ \ /\ / / _` | | | | '_ \ / _` | '__| 
+//   \ V  V / (_| | |_| | |_) | (_| | |    
+//    \_/\_/ \__,_|\__, |_.__/ \__,_|_|    
+//                 |___/                   
+//  
+// by Stephan Raabe (2023) 
+// ----------------------------------------------------- 
+//
+{
+    // General Settings
+
+    // Position TOP
+    "layer": "top",
+    "spacing": 0,
+    // Load Modules
+    "include": [
+        "~/.config/waybar/themes/zen-bar/modules.json"
+    ],
+
+    // Modules Left
+    "modules-left": [
+        "custom/appmenu",
+    ],
+
+    // Modules Center
+    "modules-center": [
+        "custom/updates",
+        "custom/endpoint",
+        "pulseaudio",
+        "custom/endpoint",
+        "hyprland/workspaces",
+        "custom/endpoint",
+        "clock",
+        "custom/endpoint",
+        "battery", 
+        "custom/battery-check"
+    ],
+
+    // Modules Right    
+    "modules-right": [
+        "network",
+        "custom/endpoint",
+        "tray",
+        "custom/exit", 
+    ]
+}
