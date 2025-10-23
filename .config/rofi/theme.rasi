@@ -1,0 +1,11 @@
+@import "./matugen-rofi.rasi"
+
+* {
+	background: @surface;
+	background-alt: @on-primary;
+	text: @on-surface;
+	accent: @primary;
+  selected: @primary;
+  selected-text: @on-primary;
+	border: #00000000;
+}

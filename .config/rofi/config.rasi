@@ -1,0 +1,96 @@
+@import "./fonts.rasi"
+@import "./theme.rasi"
+
+configuration {
+    modes: "drun";
+    show-icons: true;
+    terminal: "ghostty +new-window";
+    drun-display-format: "{name}";
+}
+
+window {
+    enabled: true;
+    transparency: "real";
+    location: north;
+    anchor: north;
+    x-offset: 0;
+    y-offset: 15px;
+    width: 650px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid;
+	border-color: @border;
+    border-radius: 12px;
+    background-color: @background;
+}
+
+scrollbar {
+    enabled: false;
+}
+
+mainbox {
+    enabled: true;
+    spacing: 4px;
+    padding: 12px;
+    background-color: transparent;
+    children: ["inputbar", "listview"];
+}
+
+inputbar {
+    enabled: true;
+    children: ["entry"];
+    padding: 8px;
+}
+
+entry {
+    enabled: true;
+    placeholder: "Open an App";
+    font: "Rubik 12";
+    background-color: transparent;
+    text-color: @text;
+}
+
+message {
+    padding: 12px;
+}
+
+listview {
+    enabled: true;
+    layout: horizontal;
+    columns: 5;
+    dynamic: true;
+    cycle: true;
+    border-color: transparent;
+}
+
+element {
+    enabled: true;
+    orientation: vertical;
+    children: [ "element-icon", "element-text" ];
+    padding: 10px;
+    width: 120px;
+    spacing: 10px;
+    margin: 5px;
+    border-radius: 12px;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: transparent;
+    text-color: @text;
+}
+
+element selected.normal {
+    background-color: @selected;
+    text-color: @selected-text;
+}
+
+element-icon {
+    size: 48px;
+}
+
+element-text {
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+    highlight: none;
+}
